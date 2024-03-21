@@ -4,6 +4,8 @@
 
 This repository demonstrates the use of the ternary operator in JavaScript to solve various challenges related to Monster Energy drinks.
 
+## My Solutions
+
 ### Challenge 1: Flavor Selection
 
 This effectively uses the ternary operator to determine and print the user's Monster Energy drink preference between regular and Sugar-free.
