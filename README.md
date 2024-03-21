@@ -1,36 +1,55 @@
-# [JSL04] Submission: Monster Ternary Operator
+#### INNRAN532_BCL2401_GroupB_InnocentRangaka_JSL04
 
-You will:
-1. Use the provided Starter Code Repository.
-2. Code your solution.
-3. Commit changes to your GitHub repository.
-4. Submit the GitHub Repository Link to the LMS [JSL04] Submission Project Tab.
+# JSL04 Submission: Monster Ternary Operator
 
-Check out the practice challenges on Scrimba here: https://scrimba.com/playlist/p9bvd5QH3
+This repository demonstrates the use of the ternary operator in JavaScript to solve various challenges related to Monster Energy drinks.
 
-**Challenge Scenario:** In this coding exercise, you will work with the Monster Ternary Operator. You'll use ternary operators to make decisions based on various scenarios involving Monster Energy drinks.
+### Challenge 1: Flavor Selection
 
-In each of these challenges, the ternary operator is used to decide between two options based on a condition, demonstrating its utility for concise conditional logic. Remember that while ternaries can make the code more succinct, they should be used judiciously to maintain readability, especially for more complex conditions.
+This effectively uses the ternary operator to determine and print the user's Monster Energy drink preference between regular and Sugar-free.
 
-## What You Need to Do:
+```javascript
+let userPreference = 'Sugar-free';
 
-1. Clone the provided Starter Code Repository to your local development environment (e.g., VSCode): https://github.com/CodeSpace-Academy/Module_4_StudentNo_Classcode_Group_Name-Surname_JSL04 
-2. Open the cloned project in your code editor.
-3. Code your solution for each of the challenges as per the provided instructions.
-4. Commit your changes to your local Git repository with meaningful commit messages.
-5. Push your local Git repository to your GitHub account.
-6. Verify that the changes have been successfully pushed to your GitHub repository.
+console.log(`${userPreference === 'Sugar-free' ? 'Sugar-free' : 'Regular'}`);
+```
 
-## What You Need to Include:
+### Challenge 2: Stock Check
 
-1. Ensure that your code includes the necessary modifications to meet the challenge requirements.
-2. Your GitHub repository should contain the updated code files.
+This uses ternary operator to effectively determine the appropriate stock status based on the number of cans left (less or more than 5 cans) and prints the appropriate status message that it is the time to restock or we're stocked.
 
-## How We'll Assess Your Work:
+```javascript
+let cansLeft = 3;
 
-1. We will review your GitHub repository to ensure that it contains the updated code files.
-2. We will assess the modifications made to the code to verify that they effectively meet the challenge requirements.
-3. Successful completion of the project will involve implementing the ternary logic as per the provided instructions.
-4. We will consider the commit history and meaningful commit messages to evaluate your coding process.
+console.log(`${cansLeft < 5 ? "Time to restock!" : "We're stocked!"}`);
+```
 
-Please follow the provided steps and guidelines to complete the Monster Ternary Operator challenge effectively. Your ability to use ternary operators for conditional logic is a valuable skill, and we look forward to reviewing your work.
+### Challenge 3: Workout Intensity
+
+This uses the ternary operator to determine if the user needs a Monster Energy drink to boost their workout based on their heart rate and prints the appropriate advice that the boost is needed or energy levels are high.
+
+```javascript
+let heartRate = 95;
+
+console.log(`${heartRate < 100 ? 'Boost needed!' : 'Energy levels are high!'}`);
+```
+
+### Challenge 4: Temperature Suitability
+
+This uses the ternary operator to determine the Monster Energy drink temperature suitability and prints the indicating message that the drink is perfectly chilled or need further chilling.
+
+```javascript
+let currentTemp = 4;
+
+console.log(`${currentTemp <= 5 ? 'Chilled to perfection!' : 'Needs a cooler!'}`);
+```
+
+### Challenge 5: Late Night Coding Session
+
+This uses the ternary operator to determine if it's a good time for a Monster Energy drink based on the current hour between 7am and midnight using 24-hour format,and suggests if it is okay to have a Monster Energy drink or drinking water is a better choice.
+
+```javascript
+let currentHour = 22;
+
+console.log(`${currentHour >= 7 && currentHour < 24 ? 'Unleash the beast!' : 'Better stick to water.'}`);
+```
