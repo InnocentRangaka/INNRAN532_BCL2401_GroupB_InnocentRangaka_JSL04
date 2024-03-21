@@ -5,16 +5,20 @@
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
 
 let userPreference = 'Sugar-free'; // Possible values: 'Regular', 'Sugar-free', or undefined
-const preference = userPreference === 'Regular' ? 'Regular' : (userPreference === 'Sugar-free' ? 'Sugar-free' : 'undefined');
-console.log(`The user prefers ${preference} Monster Energy.`);
+
+// Determine the user's preferred Monster Energy flavor, defaulting to 'Regular' if not explicitly set
+// Print the variety based on user's preference
+console.log(`${userPreference === 'Sugar-free' ? 'Sugar-free' : 'Regular'}`);
 
 // #### Challenge 2: Stock Check
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
 let cansLeft = 3; // Number of cans
-const stockStatus = cansLeft < 5 ? "Time to restock!" : "We're stocked!";
-console.log(`${stockStatus}`);
+
+// Check the stock status based on the number of cans left
+// Print the stocking status based on the remaining cans on stock.
+console.log(`${cansLeft < 5 ? "Time to restock!" : "We're stocked!"}`);
 
 
 // #### Challenge 3: Workout Intensity
@@ -22,8 +26,10 @@ console.log(`${stockStatus}`);
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
 let heartRate = 95; // Current heart rate in bpm
-const energyStatus = heartRate < 100 ? 'Boost needed!' : 'Energy levels are high!';
-console.log(`${energyStatus}`);
+
+// Evaluate energy levels based on the current heart rate
+// Print an appropriate advise based on the current heart rate
+console.log(`${heartRate < 100 ? 'Boost needed!' : 'Energy levels are high!'}`);
 
 
 // #### Challenge 4: Temperature Suitability
@@ -31,8 +37,10 @@ console.log(`${energyStatus}`);
 // if the temperature is below or equal to 5°C, or "Needs a cooler!" if above 5°C.
 
 let currentTemp = 4; // Current temperature in °C
-const tempStatus = currentTemp <= 5 ? 'Chilled to perfection!' : 'Needs a cooler!';
-console.log(`${tempStatus}`);
+
+// Assess temperature suitability for the Monster Energy drink
+// Print a particular suggestion based on the temperature
+console.log(`${currentTemp <= 5 ? 'Chilled to perfection!' : 'Needs a cooler!'}`);
 
 
 // #### Challenge 5: Late Night Coding Session
@@ -42,16 +50,14 @@ console.log(`${tempStatus}`);
 
 // Define the current hour in 24-hour format
 let currentHour = 22;  // Current hour in 24-hour format
-const drinkTimeStatus = currentHour >= 7 && currentHour < 24 ? 'Unleash the beast!' : 'Better stick to water.';
-console.log(drinkTimeStatus);
 
 // Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
 // Otherwise, print "Better stick to water."
 
-
-
-
+// Recommend whether a Monster Energy drink is appropriate based on the current hour
+// Print the appropriate recommendation
+console.log(`${currentHour >= 7 && currentHour < 24 ? 'Unleash the beast!' : 'Better stick to water.'}`);
 
 
 // In each of these challenges, the ternary operator is used to decide between two options based on a condition, 
