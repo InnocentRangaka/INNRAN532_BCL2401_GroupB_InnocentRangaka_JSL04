@@ -12,7 +12,7 @@ console.log(`The user prefers ${preference} Monster Energy.`);
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
-let cansLeft = 3; // Any number of cans
+let cansLeft = 3; // Number of cans
 const stockStatus = cansLeft < 5 ? "Time to restock!" : "We're stocked!";
 console.log(`${stockStatus}`);
 
@@ -31,7 +31,8 @@ console.log(`${energyStatus}`);
 // if the temperature is below or equal to 5°C, or "Needs a cooler!" if above 5°C.
 
 let currentTemp = 4; // Current temperature in °C
-console.log(``);
+const tempStatus = currentTemp <= 5 ? 'Chilled to perfection!' : 'Needs a cooler!';
+console.log(`${tempStatus}`);
 
 
 // #### Challenge 5: Late Night Coding Session
