@@ -1,6 +1,6 @@
 #### INNRAN532_BCL2401_GroupB_InnocentRangaka_JSL04
 
-# JSL04 Submission: Monster Ternary Operator
+# JSL04 Project Submission: Monster Ternary Operator
 
 This repository demonstrates the use of the ternary operator in JavaScript to solve various challenges related to Monster Energy drinks.
 
